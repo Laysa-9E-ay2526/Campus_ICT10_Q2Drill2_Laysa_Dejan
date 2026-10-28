@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with sets</title>
+    <!-- Simple standard stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+    <h3>Add new club member:</h3>
+    <div>
+        <input type="text" id="first-name" placeholder="First Name"><br><br>
+        <input type="text" id="last-name" placeholder="Last Name"><br><br>
+        <!-- Button triggering the PyScript function -->
+        <button py-click="add_member">Submit</button>
+    </div>
+
+    <div id="output"></div>
+    
+    <script type="py" src="main.py"></script>
+</body>
+</html>
